@@ -1,0 +1,40 @@
+﻿using exercicio_character;
+
+var dragonFly = new DragonFly(name:"Libelula", life:3, strength: 5, experience: 20f);
+Console.WriteLine ("Name: {0}", dragonFly.Name);
+Console.WriteLine ("Life: {0}", dragonFly.Life);
+Console.WriteLine ("Strength: {0}", dragonFly.Strength);
+Console.WriteLine ("Experience: {0}", dragonFly.Experience);
+Console.WriteLine ("----------------------------------------------");
+dragonFly.DecrementLife(6);
+Console.WriteLine ("Life: {0}", dragonFly.Life);
+Console.WriteLine ("----------------------------------------------");
+dragonFly.IncrementStrength(5);
+Console.WriteLine ("Strength: {0}", dragonFly.Strength);
+Console.WriteLine ("----------------------------------------------");
+dragonFly.IncrementXP(10f);
+Console.WriteLine ("Experience: {0}", dragonFly.Experience);
+Console.WriteLine ("----------------------------------------------");
+dragonFly.SetMagic();
+
+
+Console.WriteLine ("----------------------------------------------");
+var generalChar = new GeneralCharacter("Vagalume", life: 5, strength: 23, experience: 50f);
+Console.WriteLine ("Name: {0}", generalChar.Name);
+Console.WriteLine ("Life: {0}", generalChar.Life);
+Console.WriteLine ("Strength: {0}", generalChar.Strength);
+Console.WriteLine ("Experience: {0}", generalChar.Experience);
+Console.WriteLine ("----------------------------------------------");
+generalChar.DecrementLife(2);
+Console.WriteLine ("Life: {0}", generalChar.Life);
+Console.WriteLine ("----------------------------------------------");
+generalChar.IncrementStrength(5);
+Console.WriteLine ("Strength: {0}", generalChar.Strength);
+Console.WriteLine ("----------------------------------------------");
+generalChar.IncrementXP(10f);
+Console.WriteLine ("Experience: {0}", generalChar.Experience);
+Console.WriteLine ("----------------------------------------------");
+generalChar.SetMagic();
+Console.WriteLine ("----------------------------------------------");
+generalChar.DecrementLife(6);
+Console.WriteLine ("Life: {0}", generalChar.Life);
